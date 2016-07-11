@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.a3dgame.ImageListenerActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+    android:id="@+id/imagelistener_activity_tb"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/banner_bg"
+
+    >
+
+    <ImageView
+        android:id="@+id/imagelistener_activity_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/fanhui"/>
+
+    <TextView
+        android:id="@+id/imagelistener_activity_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:text="sss"
+        android:textSize="15sp"/>
+
+</android.support.v7.widget.Toolbar>
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lla"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/banner_bg">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/article_comment_btn_bg_normal"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/article_comment_btn_bg_normal"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/imagelistener_activity_wb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lla"
+        android:layout_below="@id/ll"/>
+
+</RelativeLayout>

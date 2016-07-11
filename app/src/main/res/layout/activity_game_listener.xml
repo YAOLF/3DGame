@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/imagelistener_activity_tb"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/banner_bg"
+
+            >
+
+            <ImageView
+                android:id="@+id/imagelistener_activity_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/fanhui"/>
+
+            <TextView
+                android:id="@+id/imagelistener_activity_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp"
+                android:text="sss"
+                android:textSize="15sp"/>
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <WebView
+        android:id="@+id/imagelistener_activity_wb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"/>
+</LinearLayout>

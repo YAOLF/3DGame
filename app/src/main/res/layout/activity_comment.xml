@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.a3dgame.CommentActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/comment_activity_tb"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/banner_bg"
+
+        >
+
+        <ImageView
+            android:id="@+id/comment_activity_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/comment_activity_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:text="sss"
+            android:textSize="15sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_below="@id/comment_activity_tb"
+        android:id="@+id/comment_activity_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

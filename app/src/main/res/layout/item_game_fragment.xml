@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@drawable/banner_bg">
+
+    <LinearLayout
+        android:id="@+id/llPoints"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="按照游戏类型查找"
+            android:textSize="20sp"
+            />
+        <Spinner
+            android:id="@+id/item_game_sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+   <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:layout_below="@id/llPoints"
+        android:id="@+id/item_game_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+       />
+
+</RelativeLayout>
